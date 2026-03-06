@@ -217,13 +217,19 @@ export default function TjansterPage() {
                 Snabblänkar
               </h3>
               <ul className="space-y-2">
-                {['Hem', 'Tjänster', 'Projekt', 'Personal', 'Kontakt'].map((link) => (
-                  <li key={link}>
+                {[
+                  { label: 'Hem', href: '/' },
+                  { label: 'Tjänster', href: '/tjanster' },
+                  { label: 'Projekt / bilder', href: '/projekt' },
+                  { label: 'Personal', href: '/personal' },
+                  { label: 'Kontakt', href: '/kontakt' },
+                ].map((link) => (
+                  <li key={link.href}>
                     <a
-                      href={`/${link.toLowerCase()}`}
+                      href={link.href}
                       className="font-body text-sm text-concrete-400 hover:text-text-inverse transition-colors"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
