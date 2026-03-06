@@ -1,0 +1,236 @@
+/**
+ * Cityborr AB Design System
+ * Industrial & Robust - Concrete, Steel, Raw Materials
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  /* ==================== COLORS ==================== */
+  /* Industrial palette - concrete, steel, minimal color */
+
+  /* Surface colors - concrete inspired */
+  --color-surface-dark: #0a0a0a;        /* Near-black, not pure black */
+  --color-surface-base: #fafaf9;        /* Off-white, warm concrete */
+  --color-surface-elevated: #ffffff;    /* Pure white for cards/elevated elements */
+
+  /* Text colors - high contrast for readability */
+  --color-text-primary: #0f0f0f;        /* Almost black for primary text */
+  --color-text-secondary: #525252;      /* Medium gray for secondary text */
+  --color-text-tertiary: #a3a3a3;       /* Light gray for tertiary text */
+  --color-text-inverse: #fafaf9;        /* Off-white for dark backgrounds */
+
+  /* Concrete gray scale - the core of the industrial palette */
+  --color-concrete-50: #fafaf9;         /* Lightest - polished concrete */
+  --color-concrete-100: #f5f5f4;
+  --color-concrete-200: #e7e5e4;        /* Light concrete */
+  --color-concrete-300: #d6d3d1;
+  --color-concrete-400: #a8a29e;        /* Mid concrete */
+  --color-concrete-500: #78716c;        /* Raw concrete */
+  --color-concrete-600: #57534e;        /* Dark concrete */
+  --color-concrete-700: #44403c;
+  --color-concrete-800: #292524;        /* Almost asphalt */
+  --color-concrete-900: #1c1917;        /* Darkest - wet concrete */
+
+  /* Steel accents - subtle, industrial */
+  --color-steel-light: #e4e4e7;         /* Polished steel */
+  --color-steel-base: #a1a1aa;          /* Brushed steel */
+  --color-steel-dark: #52525b;          /* Dark steel */
+
+  /* Safety accent - construction yellow (used sparingly) */
+  --color-accent-warning: #eab308;      /* Safety yellow */
+  --color-accent-danger: #dc2626;       /* Safety red */
+
+  /* Functional colors */
+  --color-border-subtle: #e7e5e4;       /* Subtle borders */
+  --color-border-default: #d6d3d1;      /* Default borders */
+  --color-border-strong: #a8a29e;       /* Strong borders */
+
+  /* ==================== TYPOGRAPHY ==================== */
+
+  /* Font families */
+  --font-display: 'Space Grotesk', -apple-system, system-ui, sans-serif;  /* Geometric, industrial for headings */
+  --font-body: 'IBM Plex Sans', -apple-system, system-ui, sans-serif;     /* Technical, readable for body */
+
+  /* Font sizes - clear hierarchy */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+  --text-6xl: 3.75rem;     /* 60px */
+  --text-7xl: 4.5rem;      /* 72px */
+
+  /* Font weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  /* Line heights */
+  --leading-tight: 1.1;    /* For large headings */
+  --leading-snug: 1.3;     /* For smaller headings */
+  --leading-normal: 1.5;   /* For body text */
+  --leading-relaxed: 1.7;  /* For comfortable reading */
+
+  /* Letter spacing */
+  --tracking-tighter: -0.02em;  /* Large headings */
+  --tracking-tight: -0.01em;     /* Medium headings */
+  --tracking-normal: 0;          /* Body text */
+  --tracking-wide: 0.025em;      /* Small caps, labels */
+  --tracking-wider: 0.05em;      /* Uppercase headings */
+  --tracking-widest: 0.1em;      /* Spaced uppercase */
+
+  /* ==================== SPACING ==================== */
+  /* Larger jumps encourage meaningful spacing decisions */
+
+  --space-1: 0.25rem;   /* 4px - tight elements */
+  --space-2: 0.5rem;    /* 8px - close grouping */
+  --space-3: 1rem;      /* 16px - standard spacing */
+  --space-4: 1.5rem;    /* 24px - comfortable spacing */
+  --space-5: 2rem;      /* 32px - section spacing */
+  --space-6: 3rem;      /* 48px - large spacing */
+  --space-7: 4rem;      /* 64px - generous spacing */
+  --space-8: 6rem;      /* 96px - very generous */
+  --space-9: 8rem;      /* 128px - dramatic spacing */
+
+  /* ==================== BORDER RADIUS ==================== */
+  /* Minimal - concrete and steel are sharp */
+
+  --radius-none: 0;
+  --radius-sm: 2px;      /* Subtle softening */
+  --radius-base: 4px;    /* Default radius */
+  --radius-md: 6px;      /* Medium radius */
+  --radius-lg: 8px;      /* Larger elements */
+
+  /* ==================== SHADOWS ==================== */
+  /* Subtle, realistic - like natural light on concrete */
+
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+
+  /* ==================== TRANSITIONS ==================== */
+  /* Smooth, purposeful animations */
+
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Industrial easing - mechanical feel */
+  --ease-industrial: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-sharp: cubic-bezier(0.4, 0, 0.6, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.1, 1);
+
+  /* ==================== BREAKPOINTS ==================== */
+  /* Mobile-first responsive design */
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* ==================== LAYOUT ==================== */
+
+  --max-width-prose: 65ch;      /* Comfortable reading width */
+  --max-width-container: 1280px; /* Max content width */
+  --max-width-wide: 1536px;     /* Wide content */
+
+  /* Grid */
+  --grid-gap: var(--space-6);   /* Default grid gap */
+}
+
+/* ==================== UTILITY CLASSES ==================== */
+
+/* Typography utilities */
+.heading-1 {
+  font-family: var(--font-display);
+  font-size: var(--text-6xl);
+  font-weight: var(--font-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tighter);
+}
+
+.heading-2 {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+.heading-3 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: var(--font-semibold);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+}
+
+.heading-4 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-snug);
+}
+
+.body-large {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.body-base {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+}
+
+.body-small {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-text-primary);
+  background-color: var(--color-surface-base);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-concrete-900);
+  color: var(--color-text-inverse);
+}
